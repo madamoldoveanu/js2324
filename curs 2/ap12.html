@@ -8,23 +8,18 @@
 <body>
     <script>
         let n = 15;
-        for( let i=1; i<=n; i++){
-            // if(i == 6){
-            //     // break;
-            //     continue;
-            // }
-            if( i % 2 == 0){
-                continue;
-                console.log( `${i} este par`);
+        for(let i=1; i<=n; i++){
+            if(i%2==0){
+                console.log(`${i} este par`);
             }
             else{
-                console.log( `${i} este impar`);
+                console.log(`${i} este impar`);
             }
-            
+            if(i==6){
+                break;
+            }
         }
         console.log('am ajuns la final');
-
-
     </script>
 </body>
 </html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Sa se afiseze numerele impare pana la un numar  citit de la tastatura</h3><hr>
+    <script>
+        let x = 1;
+        n=eval(prompt("Dati numarul:"));
+        while (x<=n){
+            document.write("<br /> x este " + x);
+            x+=2;
+        }
+        for(let i=1;i<=n;i=i+2){
+            document.write("<br /> i este " + i);
+        }
+        do{
+            document.write("<br /> x este " + x);
+            x+=2;
+        }
+        while(x<=n)
+    </script>
+</body>
+
+</html>
