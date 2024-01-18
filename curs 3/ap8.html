@@ -9,7 +9,6 @@
 
 <body>
     <script>
-
         var pets = new Array();
         pets[0] = "Pisica";
         pets[1] = "Caine";
@@ -19,16 +18,13 @@
         pets[5] = "Arici";
         console.log(pets);
         document.write("Valorile memorate in tablou sunt:" + "<br/>");
-        for (x in pets) { document.write(x + "<br />"); }
-         for (x in pets) { document.write(pets[x] + "<br />"); }
-        for (x of pets) { document.write(x + "<br />"); }
+        for (x in pets) { document.write(x + "<br/>"); }
+        for (x in pets) { document.write(pets[x] + "<br/>"); }
+        for (x of pets) { document.write(x + "<br/>"); }
 
-        for(let i = 0; i < pets.length; i++){
+        for (let i = 0; i < pets.length; i++){
             document.write(pets[i] + "<br />");
         }
-
-
-
     </script>
 </body>
 
