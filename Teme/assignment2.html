@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function calculateResult() {
+            let num1 = parseInt(prompt("Please enter first number"));
+            let operation = prompt("Please choose operation from + - * /");
+            let num2 = parseInt(prompt("Please enter second number"));
+            let result = '';
+
+            if (operation === '+') {
+                result = num1 + num2;
+            } else if (operation === '-') {
+                result = num1 - num2;
+            } else if (operation === '*') {
+                result = num1 * num2;
+            } else if (operation === '/') {
+                result = num1 / num2;
+            } else {
+                result = 'Invalid operation';
+            }
+            alert("Result: " + result);
+        }
+        calculateResult();
+    </script>
+</body>
+
+</html>
