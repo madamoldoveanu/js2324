@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #050210;
+        }
+
+        .ring-light {
+            width: 500px;
+            height: 500px;
+            border: 20px;
+            border-radius: 50%;
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            position: absolute;
+            top: 180px;
+            left: 38%;
+            filter: brightness(1.4) drop-shadow(0 0 80px #94a3b8) blur(2px);
+            animation: ringLightAnimation 0.8s linear infinite;
+        }
+
+        .circle {
+            width: 430px;
+            height: 430px;
+            border: 20px;
+            border-radius: 50%;
+            background-color: #050210;
+            position: relative;
+            top: 207px;
+            left: 39.8%;
+        }
+
+        .little-circle {
+            width: 430px;
+            height: 430px;
+            border: 20px;
+            border-radius: 50%;
+            background-color: #020617;
+            position: relative;
+            bottom: 224px;
+            left: 39.9%;
+            filter: brightness(-3) blur(6px);
+            animation: little-circleAnimation 1.2s linear infinite;
+        }
+
+        @keyframes ringLightAnimation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes little-circleAnimation {
+            0% {
+                transform: scale(0);
+            }
+
+            25% {
+                transform: scale(0.25);
+            }
+
+            50% {
+                transform: scale(0.5);
+            }
+
+            75% {
+                transform: scale(0.75);
+            }
+
+            100% {
+                transform: scale(0.9);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ring-light"></div>
+    <div class="circle"></div>
+    <div class="little-circle"></div>
+</body>
+
+</html>
