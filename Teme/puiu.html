@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <style>
+        /* background: linear-gradient(#fb5dad, #55fb9f, #b97aff); */
+        /*  background-color: #050210; */
+        /* background-color: #020617; */
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-color: #050210;
+            overflow: hidden;
+        }
+
+        .gaycircle {
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            animation: crazy .8s infinite linear;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .gaycircle.but-blurred {
+            filter: blur(64px);
+        }
+
+        .straightcircle {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background-color: #050210;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .growingcircle {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background-color: #0a1a61;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(0);
+            animation: grow 2s infinite ease;
+        }
+
+        @keyframes grow {
+            0% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(0);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+
+        @keyframes crazy {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="gaycircle but-blurred"></div>
+        <div class="gaycircle"></div>
+        <div class="straightcircle"></div>
+        <div class="growingcircle"></div>
+    </div>
+</body>
+
+</html>
